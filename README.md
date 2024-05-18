@@ -87,7 +87,7 @@ The specific parameters are:
 ./synthesizer ./adult/models/rf_ad_5_6_7.json ./adult/ad_column_names.json ./adult/ad_categorical_column_names.json ./adult/ad_numerical_binary_column_index.json ./adult/ad_categorical_column_index.json sex_male 40 1 ./res/adult/hypers/hypers_ad_5_6_7_100iterA 4 ./res/adult/fair_conditions/fair_conditions_ad_5_6_7_100iterA_1threadF ./adult/ad_normalization_info.json
 ```
 
-## Credit
+## Credits
 
 If you use this implementation in your work, please add a reference/citation to our paper. You can use the following BibTeX entry:
 
@@ -104,6 +104,6 @@ If you use this implementation in your work, please add a reference/citation to 
   doi={10.1109/SaTML54575.2023.00011}}
 ```
 
-## Support
-
+Support
+---
 If you have questions about the code or how to use it, feel free to email us at lorenzo.cazzaro@unive.it or federico.marcuzzi@unive.it.
