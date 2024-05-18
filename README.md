@@ -83,7 +83,16 @@ Coming soon...
 If you use this implementation in your work, please add a reference/citation to our paper. You can use the following BibTeX entry:
 
 ```
-
+@inproceedings{10136173,
+  author={Calzavara, Stefano and Cazzaro, Lorenzo and Lucchese, Claudio and Marcuzzi, Federico},
+  booktitle={2023 IEEE Conference on Secure and Trustworthy Machine Learning (SaTML)}, 
+  title={Explainable Global Fairness Verification of Tree-Based Classifiers}, 
+  year={2023},
+  volume={},
+  number={},
+  pages={1-17},
+  keywords={Sufficient conditions;Machine learning;Testing;n/a},
+  doi={10.1109/SaTML54575.2023.00011}}
 ```
 
 ## Support
