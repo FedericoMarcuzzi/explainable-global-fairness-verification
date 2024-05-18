@@ -1,12 +1,22 @@
-# Explainable Global Fairness Verification
+Explainable Global Fairness Verification of Tree-Based Classifiers
+===============================
 
-This repository contains the implementation of the synthesiser of sufficient conditions for fairness for decision-tree ensembles proposed by **Calzavara *et. al.*** in their research paper titled [<em>Explainable Global Fairness Verification of Tree-Based Classifiers</em>](https://openreview.net/forum?id=HOu7LgqCTqd). At the moment, this repository contains the code of the synthesiser. The scripts to scripts to reproduce the experiments described in the paper will be added soon.
+This code is for the SaTML 2023 full paper [Explainable Global Fairness Verification of Tree-Based Classifiers](https://doi.org/10.1109/SaTML54575.2023.00011).
 
-## Installation
+Abstract
+---
+We present a new approach to the global fairness verification of tree-based classifiers. Given a tree-based classifier and a set of sensitive features potentially leading to discrimination, our analysis synthesizes sufficient conditions for fairness, expressed as a set of traditional propositional logic formulas, which are readily understandable by human experts. The verified fairness guarantees are global, in that the formulas predicate over all the possible inputs of the classifier, rather than just a few specific test instances. Our analysis is formally proved both sound and complete. Experimental results on public datasets show that the analysis is precise, explainable to human experts and efficient enough for practical adoption.
+
+
+Installation
+---
+
 Download the repository. Remember to compile using the flags <em>-Iinclude</em> and <em>-lpthread</em> to use the synthesiser.
 
-### Requirments
-The following requirements are necessary to use the analyzer. For reproducibility reasons, specific versions of the libraries are required.
+Requirments
+---
+
+To use the analyzer, you need the following requirements: specific versions of the libraries for reproducibility purposes.
 - Python3
 - C++14 compiler
 - sklearn (version 0.23.2 used for the experiments)
@@ -75,9 +85,6 @@ The specific parameters are:
 ./synthesizer ./adult/models/rf_ad_5_6_7.json ./adult/ad_column_names.json ./adult/ad_categorical_column_names.json ./adult/ad_numerical_binary_column_index.json ./adult/ad_categorical_column_index.json sex_male 40 1 ./res/adult/hypers/hypers_ad_5_6_7_100iterA 4 ./res/adult/fair_conditions/fair_conditions_ad_5_6_7_100iterA_1threadF ./adult/ad_normalization_info.json
 ```
 
-## Run the experiments presented in the paper
-Coming soon...
-
 ## Credit
 
 If you use this implementation in your work, please add a reference/citation to our paper. You can use the following BibTeX entry:
@@ -97,4 +104,4 @@ If you use this implementation in your work, please add a reference/citation to 
 
 ## Support
 
-If you want to ask questions about the code and how to use it, feel free to contact us by sending an email to lorenzo.cazzaro@unive.it or federico.marcuzzi@unive.it.
+If you have questions about the code or how to use it, feel free to email us at lorenzo.cazzaro@unive.it or federico.marcuzzi@unive.it.
